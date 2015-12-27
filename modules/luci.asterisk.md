@@ -1,4 +1,4 @@
-# Class luci.asterisk
+# Class `luci.asterisk`
 
 ## Functions
 
@@ -43,6 +43,7 @@
 ## Functions
 
 ### cbifill (field)
+
 Populate given CBI field with CC codes.
 
 **Parameters**
