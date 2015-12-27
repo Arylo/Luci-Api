@@ -43,5 +43,3 @@
 * [luci.sys.user](modules/luci.sys.user.md)
 * [luci.sys.wifi](modules/luci.sys.wifi.md)
 * [luci.util](modules/luci.util.md)
-
-
