@@ -1,0 +1,12 @@
+{
+	"author": "Arylo",
+	"language": "en",
+	"links": {
+		"sidebar": {
+			"From Arylo": "http://arylo.me"
+		}
+	},
+	"plugins": [
+		"include-codeblock"
+	]
+}
