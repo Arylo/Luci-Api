@@ -9,10 +9,10 @@ LuCI JSON-Library
 | [ActiveDecoder](#activedecoder-customnull) (customnull)                         | Create a new Active JSON-Decoder.                                         |
 | [ActiveDecoder:get](#activedecoderget) ()                                       | Fetches one JSON-object from given source                                 |
 | [Decoder](#decoder-customnull) (customnull)                                     | Create a new JSON-Decoder.                                                |
-| [Decoder:get](#decoderget) ()                                                   | Get the decoded data packets after the rawdata has been sent to the sink. |
-| [Decoder:sink](#decodersink) ()                                                 | Create an LTN12 sink from the decoder object which accepts the JSON-Data. |
+| [Decoder:get](#decoder-get) ()                                                   | Get the decoded data packets after the rawdata has been sent to the sink. |
+| [Decoder:sink](#decoder-sink) ()                                                 | Create an LTN12 sink from the decoder object which accepts the JSON-Data. |
 | [Encoder](#encoder-data-buffersize-fastescape) (data, buffersize, fastescape) | Create a new JSON-Encoder.                                                |
-| [Encoder:source](#encodersource) ()                                             | Create an LTN12 source providing the encoded JSON-Data.                   |
+| [Encoder:source](#encoder-source) ()                                             | Create an LTN12 source providing the encoded JSON-Data.                   |
 | [decode](#decode-json) (json)                                                   | Directly decode a JSON string                                             |
 | [encode](#encode-obj) (obj)                                                     | Direcly encode a Lua object into a JSON string.                           |
 | [null](#null) ()                                                                | Null replacement function                                                 |

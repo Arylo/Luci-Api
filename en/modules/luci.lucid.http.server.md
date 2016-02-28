@@ -6,18 +6,18 @@ HTTP Daemon
 
 |                                                                         |                                                                      |
 | -                                                                       | -                                                                    |
-| [Handler:checkrestricted](#handlercheckrestricted-request) (request)    | Enforce access restrictions.                                         |
-| [Handler:failure](#handlerfailure-code-msg) (code, msg)                 | Create a failure reply.                                              |
-| [Handler:process](#handlerprocess-request-sourcein) (request, sourcein) | Process a request.                                                   |
-| [Handler:restrict](#handlerrestrict-restriction) (restriction)          | Add an access restriction.                                           |
-| [Server:error](#servererror-client-code-msg) (client, code, msg)        | Send a fatal error message to given client and close the connection. |
-| [Server:get_vhosts](#serverget_vhosts) ()                               | Get a list of registered virtual hosts.                              |
-| [Server:parse_headers](#serverparse_headers-source) (source)            | Parse the request headers and prepare the environment.               |
-| [Server:process](#serverprocess-client-env) (client, env)               | Handle a new client connection.                                      |
-| [Server:set_vhost](#serverset_vhost-name-vhost) (name, vhost)           | Register a virtual host with a given name.                           |
-| [VHost:get_handlers](#vhostget_handlers) ()                             | Get a list of registered handlers.                                   |
-| [VHost:process](#vhostprocess-request) (request, ...)                   | Process a request and invoke the appropriate handler.                |
-| [VHost:set_handler](#vhostset_handler-handler) (handler)                | Register handler with a given URI prefix.                            |
+| [Handler:checkrestricted](#handler-checkrestricted-request) (request)    | Enforce access restrictions.                                         |
+| [Handler:failure](#handler-failure-code-msg) (code, msg)                 | Create a failure reply.                                              |
+| [Handler:process](#handler-process-request-sourcein) (request, sourcein) | Process a request.                                                   |
+| [Handler:restrict](#handler-restrict-restriction) (restriction)          | Add an access restriction.                                           |
+| [Server:error](#server-error-client-code-msg) (client, code, msg)        | Send a fatal error message to given client and close the connection. |
+| [Server:get_vhosts](#server-get_vhosts) ()                               | Get a list of registered virtual hosts.                              |
+| [Server:parse_headers](#server-parse_headers-source) (source)            | Parse the request headers and prepare the environment.               |
+| [Server:process](#server-process-client-env) (client, env)               | Handle a new client connection.                                      |
+| [Server:set_vhost](#server-set_vhost-name-vhost) (name, vhost)           | Register a virtual host with a given name.                           |
+| [VHost:get_handlers](#vhost-get_handlers) ()                             | Get a list of registered handlers.                                   |
+| [VHost:process](#vhost-process-request) (request, ...)                   | Process a request and invoke the appropriate handler.                |
+| [VHost:set_handler](#vhost-set_handler-handler) (handler)                | Register handler with a given URI prefix.                            |
 
 ## Functions
 

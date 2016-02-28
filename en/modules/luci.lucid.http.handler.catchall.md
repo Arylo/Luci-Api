@@ -6,8 +6,8 @@ Catchall Handler
 
 |                                                                |                        |
 | -                                                              | -                      |
-| [Redirect:handle_GET](#redirecthandle_get-request) (request)   | Handle a GET request.  |
-| [Redirect:handle_HEAD](#redirecthandle_head-request) (request) | Handle a HEAD request. |
+| [Redirect:handle_GET](#redirect-handle_get-request) (request)   | Handle a GET request.  |
+| [Redirect:handle_HEAD](#redirect-handle_head-request) (request) | Handle a HEAD request. |
 
 ## Functions
 

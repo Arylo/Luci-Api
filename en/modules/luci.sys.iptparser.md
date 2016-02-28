@@ -7,12 +7,12 @@ LuCI iptables parser and query library
 |||
 |-|-|
 |[IptParser](#iptparser-family) (family)|Create a new iptables parser object.|
-|[IptParser:chain](#iptparserchain-table-chain) (table, chain) |Return the given firewall chain within the given table name.|
-|[IptParser:chains](#iptparserchains-table) (table) |Find the names of all chains within the given table name.|
-|[IptParser:find](#iptparserfind) () |Find all firewall rules that match the given criteria.|
-|[IptParser:is_custom_target](#iptparseris_custom_target-target) (target) |Test whether the given target points to a custom chain.|
-|[IptParser:resync](#iptparserresync) () |Rebuild the internal lookup table, for example when rules have changed through external commands.|
-|[IptParser:tables](#iptparsertables) () |Find the names of all tables.|
+|[IptParser:chain](#iptparser-chain-table-chain) (table, chain) |Return the given firewall chain within the given table name.|
+|[IptParser:chains](#iptparser-chains-table) (table) |Find the names of all chains within the given table name.|
+|[IptParser:find](#iptparser-find) () |Find all firewall rules that match the given criteria.|
+|[IptParser:is_custom_target](#iptparser-is_custom_target-target) (target) |Test whether the given target points to a custom chain.|
+|[IptParser:resync](#iptparser-resync) () |Rebuild the internal lookup table, for example when rules have changed through external commands.|
+|[IptParser:tables](#iptparser-tables) () |Find the names of all tables.|
 
 ## Functions
 

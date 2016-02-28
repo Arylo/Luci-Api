@@ -6,9 +6,9 @@ LuCI web handler
 
 |                                                        |                        |
 | -                                                      | -                      |
-| [Luci:handle_GET](#lucihandle_get-request) (request)   | Handle a GET request.  |
-| [Luci:handle_HEAD](#lucihandle_head-request) (request) | Handle a HEAD request. |
-| [Luci:handle_POST](#lucihandle_post-request) (request) | Handle a POST request. |
+| [Luci:handle_GET](#luci-handle_get-request) (request)   | Handle a GET request.  |
+| [Luci:handle_HEAD](#luci-handle_head-request) (request) | Handle a HEAD request. |
+| [Luci:handle_POST](#luci-handle_post-request) (request) | Handle a POST request. |
 
 ## Functions
 

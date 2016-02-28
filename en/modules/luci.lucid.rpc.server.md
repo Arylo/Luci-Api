@@ -6,19 +6,19 @@ RPC daemom.
 
 |                                                                                |                                                     |
 | -                                                                              | -                                                   |
-| [Method:call](#methodcall-session-argv) (session, argv)                        | Standard call the associated function.              |
-| [Method:extended](#methodextended-method-description) (method, description)    | Create an extended wrapped RPC method.              |
-| [Method:process](#methodprocess-session-request-argv) (session, request, argv) | Process a given request and create a JSON response. |
-| [Method:xcall](#methodxcall-session-argv) (session, argv)                      | Extended call the associated function.              |
-| [Module:add](#moduleadd-k-v) (k, v)                                            | Add a handler.                                      |
-| [Module:checkrestricted](#modulecheckrestricted-request) (request)             | Enforce access restrictions.                        |
-| [Module:process](#moduleprocess-session-request-argv) (session, request, argv) | Process a request.                                  |
-| [Module:register](#moduleregister-m-descr) (m, descr)                          | Register a handler, submodule or function.          |
-| [Module:restrict](#modulerestrict-restriction) (restriction)                   | Add an access restriction.                          |
-| [Server:get_root](#serverget_root) ()                                          | Get the associated root module.                     |
-| [Server:process](#serverprocess-client-env) (client, env)                      | Handle a new client connection.                     |
-| [Server:reply](#serverreply-jsonrpc-id-res-err) (jsonrpc, id, res, err)        | Create a JSON reply.                                |
-| [Server:set_root](#serverset_root-root) (root)                                 | Set a new root module.                              |
+| [Method:call](#method-call-session-argv) (session, argv)                        | Standard call the associated function.              |
+| [Method:extended](#method-extended-method-description) (method, description)    | Create an extended wrapped RPC method.              |
+| [Method:process](#method-process-session-request-argv) (session, request, argv) | Process a given request and create a JSON response. |
+| [Method:xcall](#method-xcall-session-argv) (session, argv)                      | Extended call the associated function.              |
+| [Module:add](#module-add-k-v) (k, v)                                            | Add a handler.                                      |
+| [Module:checkrestricted](#module-checkrestricted-request) (request)             | Enforce access restrictions.                        |
+| [Module:process](#module-process-session-request-argv) (session, request, argv) | Process a request.                                  |
+| [Module:register](#module-register-m-descr) (m, descr)                          | Register a handler, submodule or function.          |
+| [Module:restrict](#module-restrict-restriction) (restriction)                   | Add an access restriction.                          |
+| [Server:get_root](#server-get_root) ()                                          | Get the associated root module.                     |
+| [Server:process](#server-process-client-env) (client, env)                      | Handle a new client connection.                     |
+| [Server:reply](#server-reply-jsonrpc-id-res-err) (jsonrpc, id, res, err)        | Create a JSON reply.                                |
+| [Server:set_root](#server-set_root-root) (root)                                 | Set a new root module.                              |
 
 ## Functions
 

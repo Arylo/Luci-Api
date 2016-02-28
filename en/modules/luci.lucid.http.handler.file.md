@@ -6,10 +6,10 @@ File system handler
 
 |                                                                       |                                             |
 | -                                                                     | -                                           |
-| [Simple:getfile](#simplegetfile-uri) (uri)                            | Translate path and return file information. |
-| [Simple:handle_GET](#simplehandle_get-request) (request)              | Handle a GET request.                       |
-| [Simple:handle_HEAD](#simplehandle_head-request) (request)            | Handle a HEAD request.                      |
-| [Simple:parse_range](#simpleparse_range-request-size) (request, size) | Parse a range request.                      |
+| [Simple:getfile](#simple-getfile-uri) (uri)                            | Translate path and return file information. |
+| [Simple:handle_GET](#simple-handle_get-request) (request)              | Handle a GET request.                       |
+| [Simple:handle_HEAD](#simple-handle_head-request) (request)            | Handle a HEAD request.                      |
+| [Simple:parse_range](#simple-parse_range-request-size) (request, size) | Parse a range request.                      |
 
 ## Functions
 

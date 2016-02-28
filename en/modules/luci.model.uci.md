@@ -6,33 +6,33 @@ LuCI UCI model library. The typical workflow for UCI is:  Get a cursor instance 
 
 |                                                                                                 |                                                                  |
 | -                                                                                               | -                                                                |
-| [Cursor:add](#cursoradd-config-type) (config, type)                                             | Add an anonymous section.                                        |
-| [Cursor:apply](#cursorapply-configlist-command) (configlist, command)                           | Applies UCI configuration changes                                |
-| [Cursor:changes](#cursorchanges-config) (config)                                                | Get a table of saved but uncommitted changes.                    |
-| [Cursor:commit](#cursorcommit-config) (config)                                                  | Commit saved changes.                                            |
-| [Cursor:delete](#cursordelete-config-section-option) (config, section, option)                  | Deletes a section or an option.                                  |
-| [Cursor:delete_all](#cursordelete_all-config-type-comparator) (config, type, comparator)        | Delete all sections of a given type that match certain criteria. |
-| [Cursor:foreach](#cursorforeach-config-type-callback) (config, type, callback)                  | Call a function for every section of a certain type.             |
-| [Cursor:get](#cursorget-config-section-option) (config, section, option)                        | Get a section type or an option                                  |
-| [Cursor:get_all](#cursorget_all-config-section) (config, section)                               | Get all sections of a config or all values of a section.         |
-| [Cursor:get_bool](#cursorget_bool-config-section-option) (config, section, option)              | Get a boolean option and return it's value as true or false.     |
-| [Cursor:get_confdir](#cursorget_confdir) ()                                                     | Get the configuration directory.                                 |
-| [Cursor:get_first](#cursorget_first-config-type-option-default) (config, type, option, default) | Get the given option from the first section with the given type. |
-| [Cursor:get_list](#cursorget_list-config-section-option) (config, section, option)              | Get an option or list and return values as table.                |
-| [Cursor:get_savedir](#cursorget_savedir) ()                                                     | Get the directory for uncomitted changes.                        |
-| [Cursor:load](#cursorload-config) (config)                                                      | Manually load a config.                                          |
-| [Cursor:revert](#cursorrevert-config) (config)                                                  | Revert saved but uncommitted changes.                            |
-| [Cursor:save](#cursorsave-config) (config)                                                      | Saves changes made to a config to make them committable.         |
-| [Cursor:section](#cursorsection-config-type-name-values) (config, type, name, values)           | Create a new section and initialize it with data.                |
-| [Cursor:set](#cursorset-config-section-option-value) (config, section, option, value)           | Set a value or create a named section.                           |
-| [Cursor:set_confdir](#cursorset_confdir-directory) (directory)                                  | Set the configuration directory.                                 |
-| [Cursor:set_list](#cursorset_list-config-section-option-value) (config, section, option, value) | Set given values as list.                                        |
-| [Cursor:set_savedir](#cursorset_savedir-directory) (directory)                                  | Set the directory for uncommited changes.                        |
-| [Cursor:substate](#cursorsubstate) ()                                                           | Create a sub-state of this cursor.                               |
-| [Cursor:tset](#cursortset-config-section-values) (config, section, values)                      | Updated the data of a section using data from a table.           |
-| [Cursor:unload](#cursorunload-config) (config)                                                  | Discard changes made to a config.                                |
-| [cursor](#cursor) ()                                                                            | Create a new UCI-Cursor.                                         |
-| [cursor_state](#cursor_state) ()                                                                | Create a new Cursor initialized to the state directory.          |
+| [Cursor:add](#cursor-add-config-type) (config, type)                                             | Add an anonymous section.                                        |
+| [Cursor:apply](#cursor-apply-configlist-command) (configlist, command)                           | Applies UCI configuration changes                                |
+| [Cursor:changes](#cursor-changes-config) (config)                                                | Get a table of saved but uncommitted changes.                    |
+| [Cursor:commit](#cursor-commit-config) (config)                                                  | Commit saved changes.                                            |
+| [Cursor:delete](#cursor-delete-config-section-option) (config, section, option)                  | Deletes a section or an option.                                  |
+| [Cursor:delete_all](#cursor-delete_all-config-type-comparator) (config, type, comparator)        | Delete all sections of a given type that match certain criteria. |
+| [Cursor:foreach](#cursor-foreach-config-type-callback) (config, type, callback)                  | Call a function for every section of a certain type.             |
+| [Cursor:get](#cursor-get-config-section-option) (config, section, option)                        | Get a section type or an option                                  |
+| [Cursor:get_all](#cursor-get_all-config-section) (config, section)                               | Get all sections of a config or all values of a section.         |
+| [Cursor:get_bool](#cursor-get_bool-config-section-option) (config, section, option)              | Get a boolean option and return it's value as true or false.     |
+| [Cursor:get_confdir](#cursor-get_confdir) ()                                                     | Get the configuration directory.                                 |
+| [Cursor:get_first](#cursor-get_first-config-type-option-default) (config, type, option, default) | Get the given option from the first section with the given type. |
+| [Cursor:get_list](#cursor-get_list-config-section-option) (config, section, option)              | Get an option or list and return values as table.                |
+| [Cursor:get_savedir](#cursor-get_savedir) ()                                                     | Get the directory for uncomitted changes.                        |
+| [Cursor:load](#cursor-load-config) (config)                                                      | Manually load a config.                                          |
+| [Cursor:revert](#cursor-revert-config) (config)                                                  | Revert saved but uncommitted changes.                            |
+| [Cursor:save](#cursor-save-config) (config)                                                      | Saves changes made to a config to make them committable.         |
+| [Cursor:section](#cursor-section-config-type-name-values) (config, type, name, values)           | Create a new section and initialize it with data.                |
+| [Cursor:set](#cursor-set-config-section-option-value) (config, section, option, value)           | Set a value or create a named section.                           |
+| [Cursor:set_confdir](#cursor-set_confdir-directory) (directory)                                  | Set the configuration directory.                                 |
+| [Cursor:set_list](#cursor-set_list-config-section-option-value) (config, section, option, value) | Set given values as list.                                        |
+| [Cursor:set_savedir](#cursor-set_savedir-directory) (directory)                                  | Set the directory for uncommited changes.                        |
+| [Cursor:substate](#cursor-substate) ()                                                           | Create a sub-state of this cursor.                               |
+| [Cursor:tset](#cursor-tset-config-section-values) (config, section, values)                      | Updated the data of a section using data from a table.           |
+| [Cursor:unload](#cursor-unload-config) (config)                                                  | Discard changes made to a config.                                |
+| [cursor](#cursor-) ()                                                                            | Create a new UCI-Cursor.                                         |
+| [cursor_state](#cursor-_state) ()                                                                | Create a new Cursor initialized to the state directory.          |
 
 ## Functions
 
@@ -74,7 +74,7 @@ Table of changes
 
 **See also:**
 
-- [Cursor:save](#cursorsave-config)
+- [Cursor:save](#cursor-save-config)
 
 ---
 ### Cursor:commit (config)
@@ -91,8 +91,8 @@ Boolean whether operation succeeded
 
 **See also:**
 
-- [Cursor:revert](#cursorrevert-config)
-- [Cursor:save](#cursorsave-config)
+- [Cursor:revert](#cursor-revert-config)
+- [Cursor:save](#cursor-save-config)
 
 ---
 ### Cursor:delete (config, section, option)
@@ -243,8 +243,8 @@ Boolean whether operation succeeded
 
 **See also:**
 
-- [Cursor:save](#cursorsave-config)
-- [Cursor:unload](#cursorunload-config)
+- [Cursor:save](#cursor-save-config)
+- [Cursor:unload](#cursor-unload-config)
 
 ---
 ### Cursor:revert (config)
@@ -261,8 +261,8 @@ Boolean whether operation succeeded
 
 **See also:**
 
-- [Cursor:commit](#cursorcommit-config)
-- [Cursor:save](#cursorsave-config)
+- [Cursor:commit](#cursor-commit-config)
+- [Cursor:save](#cursor-save-config)
 
 ---
 ### Cursor:save (config)
@@ -279,8 +279,8 @@ Boolean whether operation succeeded
 
 **See also:**
 
-- [Cursor:load](#cursorload-config)
-- [Cursor:unload](#cursorunload-config)
+- [Cursor:load](#cursor-load-config)
+- [Cursor:unload](#cursor-unload-config)
 
 ---
 ### Cursor:section (config, type, name, values)
@@ -391,8 +391,8 @@ Boolean whether operation succeeded
 
 **See also:**
 
-- [Cursor:load](#cursorload-config)
-- [Cursor:save](#cursorsave-config)
+- [Cursor:load](#cursor-load-config)
+- [Cursor:save](#cursor-save-config)
 
 ---
 ### cursor ()

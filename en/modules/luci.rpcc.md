@@ -6,8 +6,8 @@ LuCI RPC Client.
 
 |||
 |-|-|
-|[Client:proxy](#clientproxy-prefix) (prefix)|Create a transparent RPC proxy.|
-|[Client:request](#clientrequest-method-params-notification) (method, params, notification)|Request an RP call and get the response.|
+|[Client:proxy](#client-proxy-prefix) (prefix)|Create a transparent RPC proxy.|
+|[Client:request](#client-request-method-params-notification) (method, params, notification)|Request an RP call and get the response.|
 
 ## Functions
 
